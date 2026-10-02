@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Janah Restaurant Brothers – Casablanca</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d2b27;--bg2:#143a35;--ink:#f7f3ea;--mut:#a9c2bc;--gold:#f4b73f;--red:#e4572e;--card:#17433d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d2b27}}
+:root[data-theme="dark"]{--bg:#0d2b27}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 'DM Sans',system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Bricolage Grotesque',Georgia,sans-serif;line-height:1.05}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(13,43,39,.85);backdrop-filter:blur(8px)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font:800 20px 'Bricolage Grotesque',sans-serif;text-decoration:none}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;background:var(--gold);color:#1a1405;font-weight:500;text-decoration:none;transition:transform .2s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--mut)}
+.hero{min-height:calc(100vh - 60px);display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:10px}
+.hero h1{font-size:clamp(46px,8vw,96px);font-weight:800;animation:rise 1s cubic-bezier(.2,.8,.2,1) both}
+.hero p{color:var(--mut);max-width:34ch;margin:18px 0 28px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+@keyframes rise{from{opacity:0;transform:translateY(40px) rotateX(40deg)}to{opacity:1;transform:none}}
+#stage{height:min(80vh,560px);width:100%;position:relative}
+#stage canvas{width:100%!important;height:100%!important;display:block}
+.badge{display:inline-block;margin-bottom:16px;padding:6px 14px;border-radius:999px;background:var(--bg2);color:var(--gold);font-size:15px}
+section{padding:80px 0}
+h2{font-size:clamp(32px,5vw,54px);font-weight:800;margin-bottom:34px}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;perspective:900px}
+.tile{background:var(--card);border-radius:20px;padding:26px;transform-style:preserve-3d;transition:transform .15s ease-out}
+.tile h3{font-size:22px;margin-bottom:8px;color:var(--gold)}
+.tile p{color:var(--ink)}
+.reviews{background:var(--bg2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;perspective:1000px}
+.rev{background:var(--bg);border-radius:20px;padding:26px;transform-style:preserve-3d;transition:transform .15s ease-out,box-shadow .2s;box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.rev .stars{color:var(--gold);letter-spacing:3px;transform:translateZ(30px)}
+.rev p{margin:12px 0 16px;transform:translateZ(18px)}
+.rev b{color:var(--gold);transform:translateZ(24px);display:block}
+.rev small{color:var(--mut)}
+.note{color:var(--mut);font-size:14px;margin-top:22px}
+.contact{text-align:center}
+.contact .num{font:800 clamp(34px,7vw,72px) 'Bricolage Grotesque',sans-serif;display:block;text-decoration:none;margin:10px 0 26px}
+footer{padding:28px 0;text-align:center;color:var(--mut);font-size:14px}
+@media(max-width:780px){.hero{grid-template-columns:1fr;text-align:left;padding-top:20px}#stage{height:340px;order:-1}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top">Janah Brothers</a><a class="btn" href="tel:+212661530058">Appeler</a></div></header>
+<main id="top">
+<div class="wrap hero">
+ <div>
+  <span class="badge">Ouvert 24h/24</span>
+  <h1>Janah<br>Restaurant<br>Brothers</h1>
+  <p>Un restaurant familial à Casablanca, où l'on mange bien à toute heure, jour et nuit.</p>
+  <div class="cta">
+   <a class="btn" href="tel:+212661530058">06 61 53 00 58</a>
+   <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=HCF6%2B63V+Casablanca" target="_blank" rel="noopener">Itinéraire</a>
+  </div>
+ </div>
+ <div id="stage" aria-label="Burger en 3D qui tourne"></div>
+</div>
+
+<section><div class="wrap">
+ <h2>Venez comme vous êtes</h2>
+ <div class="info">
+  <div class="tile"><h3>Restaurant familial</h3><p>Une table pour toute la famille, une ambiance simple et chaleureuse.</p></div>
+  <div class="tile"><h3>Ouvert 24h/24</h3><p>Un petit creux à minuit ou un repas à l'aube : la porte est ouverte.</p></div>
+  <div class="tile"><h3>Adresse</h3><p>HCF6+63V<br>Casablanca 20250</p></div>
+  <div class="tile"><h3>Téléphone</h3><p><a href="tel:+212661530058">06 61 53 00 58</a></p></div>
+ </div>
+</div></section>
+
+<section class="reviews"><div class="wrap">
+ <h2>Ce que disent nos clients</h2>
+ <div class="grid">
+  <article class="rev"><div class="stars">★★★★★</div><p>Accueil chaleureux et service rapide. On s'y sent comme à la maison, même à deux heures du matin.</p><b>Yassine B.</b><small>Venu en famille</small></article>
+  <article class="rev"><div class="stars">★★★★★</div><p>Les portions sont généreuses et tout arrive chaud. Mes enfants réclament déjà d'y retourner.</p><b>Salma R.</b><small>Déjeuner du dimanche</small></article>
+  <article class="rev"><div class="stars">★★★★★</div><p>Ouvert 24h/24, c'est rare et précieux. Après une longue route, c'était exactement ce qu'il nous fallait.</p><b>Omar K.</b><small>Repas de nuit</small></article>
+  <article class="rev"><div class="stars">★★★★☆</div><p>Bon rapport qualité-prix et une équipe souriante. Un peu de monde le soir, mais ça vaut l'attente.</p><b>Hajar L.</b><small>Entre amis</small></article>
+  <article class="rev"><div class="stars">★★★★★</div><p>Des frères passionnés qui connaissent leurs clients par leur prénom. C'est ça, un vrai restaurant familial.</p><b>Mehdi A.</b><small>Client régulier</small></article>
+  <article class="rev"><div class="stars">★★★★★</div><p>Propre, simple, efficace. Je recommande à tous ceux qui cherchent une bonne adresse ouverte tard.</p><b>Imane T.</b><small>Dîner tardif</small></article>
+ </div>
+ <p class="note">Avis d'exemple rédigés pour cette maquette. Remplacez-les par vos vrais avis Google.</p>
+</div></section>
+
+<section class="contact"><div class="wrap">
+ <h2>On vous attend, à toute heure</h2>
+ <a class="num" href="tel:+212661530058">06 61 53 00 58</a>
+ <a class="btn" href="https://www.google.com/maps/search/?api=1&query=HCF6%2B63V+Casablanca" target="_blank" rel="noopener">Ouvrir dans Google Maps</a>
+</div></section>
+</main>
+<footer>Janah Restaurant Brothers · HCF6+63V, Casablanca 20250</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+ var el=document.getElementById('stage');
+ try{
+  var sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(40,1,.1,100);cam.position.set(0,2.2,8);cam.lookAt(0,0,0);
+  var r=new THREE.WebGLRenderer({alpha:true,antialias:true});r.setPixelRatio(Math.min(devicePixelRatio,2));el.appendChild(r.domElement);
+  sc.add(new THREE.AmbientLight(0xffffff,.7));var d=new THREE.DirectionalLight(0xffffff,.9);d.position.set(4,6,5);sc.add(d);
+  var g=new THREE.Group();sc.add(g);
+  function M(c){return new THREE.MeshStandardMaterial({color:c,roughness:.6})}
+  function add(geo,c,y){var m=new THREE.Mesh(geo,M(c));m.position.y=y;g.add(m);return m}
+  add(new THREE.CylinderGeometry(2,1.8,.55,48),0xd9902f,-1.1);
+  add(new THREE.CylinderGeometry(2.05,2.05,.5,48),0x4a2616,-.6);
+  var ch=add(new THREE.BoxGeometry(3.3,.12,3.3),0xf4b73f,-.28);ch.rotation.y=Math.PI/4;
+  add(new THREE.TorusGeometry(1.9,.14,12,48),0x6bbf4a,-.15).rotation.x=Math.PI/2;
+  add(new THREE.CylinderGeometry(1.8,1.8,.25,48),0xe4572e,.05);
+  var top=add(new THREE.SphereGeometry(2.1,48,24,0,Math.PI*2,0,Math.PI/2),0xe0a03a,.2);top.scale.y=.85;
+  for(var i=0;i<14;i++){var s=add(new THREE.SphereGeometry(.07,8,8),0xfff1c9,0);var a=i*2.4,rr=.4+i*.1;s.position.set(Math.cos(a)*rr,.2+1.75*Math.sqrt(Math.max(0,1-(rr/2.1)*(rr/2.1)))+.02,Math.sin(a)*rr);}
+  g.rotation.x=.25;
+  var mx=0,my=0;addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+  function size(){var w=el.clientWidth,h=el.clientHeight;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+  addEventListener('resize',size);size();
+  var t=0,reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  (function loop(){requestAnimationFrame(loop);if(!reduce)t+=.012;g.rotation.y=t+mx*1.2;g.rotation.x=.25+my*.5;g.position.y=Math.sin(t*2)*.12;r.render(sc,cam)})();
+ }catch(e){el.style.display='none'}
+ document.querySelectorAll('.tile,.rev').forEach(function(c){
+  c.addEventListener('pointermove',function(e){var b=c.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;c.style.transform='rotateY('+x*16+'deg) rotateX('+-y*16+'deg) translateZ(10px)'});
+  c.addEventListener('pointerleave',function(){c.style.transform=''});
+ });
+})();
+</script>
+</body>
+</html>
